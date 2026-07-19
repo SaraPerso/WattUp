@@ -1,0 +1,20 @@
+
+:root{--navy:#0f2e5d;--dark:#071c3a;--text:#222;--muted:#657080;--soft:#f4f7fa}
+*{box-sizing:border-box}body{margin:0;font-family:Montserrat,Arial,sans-serif;color:var(--text);line-height:1.6;background:white}
+.container{width:min(1100px,calc(100% - 40px));margin:auto}a{text-decoration:none;color:inherit}
+header{border-bottom:1px solid #e6ebf0;background:white;position:sticky;top:0;z-index:10}
+nav{min-height:76px;display:flex;justify-content:space-between;align-items:center;gap:20px}
+nav img{width:180px}.back{font-weight:700;color:var(--navy)}
+.hero{padding:80px 0;color:white}.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:40px}
+.hero h1{font-size:clamp(2.7rem,6vw,5rem);line-height:1.05;margin:10px 0}.hero p{font-size:1.1rem;max-width:650px}
+.hero img{background:white;border-radius:24px;padding:12px;box-shadow:0 20px 50px rgba(0,0,0,.18)}
+.tag{font-size:.8rem;text-transform:uppercase;letter-spacing:.1em;font-weight:800}
+section{padding:72px 0}h2{font-size:2.3rem;color:var(--dark);margin-top:0}
+.products{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{border:1px solid #e0e6ec;border-radius:20px;padding:24px;background:white;box-shadow:0 10px 28px rgba(15,46,93,.07)}
+.card h3{color:var(--navy);margin-top:0}.card span{font-size:.82rem;font-weight:700;color:#52606d}
+.soft{background:var(--soft)}.benefits{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;padding:0;list-style:none}
+.benefits li{background:white;border-radius:14px;padding:16px;font-weight:600}.benefits li:before{content:"✓";margin-right:10px;color:#3f9d57}
+.cta{padding:60px 0;text-align:center;color:white}.button{display:inline-block;background:white;color:var(--navy);font-weight:800;padding:14px 22px;border-radius:999px;margin-top:12px}
+footer{background:var(--dark);color:#ccd8e5;text-align:center;padding:24px;font-size:.85rem}
+@media(max-width:760px){.hero-grid,.products{grid-template-columns:1fr}.benefits{grid-template-columns:1fr}.hero{padding:55px 0}nav img{width:145px}}
